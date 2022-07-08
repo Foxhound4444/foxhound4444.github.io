@@ -61,7 +61,7 @@ const devices = (canvas) => {
         Vdevice(canvas)
       }
           // R device option
-          else if (prng() < 0.2) {
+          else if (prng() < 0.4) {
             Rdevice(canvas)
           }
       
