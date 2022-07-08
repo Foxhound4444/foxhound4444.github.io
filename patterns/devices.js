@@ -60,6 +60,11 @@ const devices = (canvas) => {
       else if (prng() < 0.3) {
         Vdevice(canvas)
       }
+          // R device option
+          else if (prng() < 0.2) {
+            Rdevice(canvas)
+          }
+      
   
   else {
     arrowHead(canvas)
