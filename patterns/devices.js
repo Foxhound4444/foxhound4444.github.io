@@ -44,7 +44,7 @@ const devices = (canvas) => {
     serviceStars(canvas)
   } 
 
-      // V device to be used if not arrowhead
+      // V device option
       else if (prng() < 0.3) {
         Vdevice(canvas)
       }
