@@ -45,6 +45,10 @@ const devices = (canvas) => {
   } else {
     arrowHead(canvas)
   }
+  // V device. will need to fix
+  else {
+    Vdevice(canvas)
+  }
 
 }
 
