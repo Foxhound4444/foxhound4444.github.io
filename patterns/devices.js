@@ -26,18 +26,18 @@ const arrowHead = (canvas) => {
   ctx.drawImage(image, (canvas.width  - arrowWidth) / 2, arrowHeight / 2, arrowWidth, arrowHeight)
 }
 
-// V device
-const Vdevice = (canvas) => {
-  const image = document.getElementById('Vdevice')
+// // V device
+// const Vdevice = (canvas) => {
+//   const image = document.getElementById('Vdevice')
 
-  const ctx = canvas.getContext('2d')
-  const imageRatio =  (canvas.height / 2) / image.height
-  const VHeight = image.height * imageRatio
-  const VWidth = image.width * imageRatio
+//   const ctx = canvas.getContext('2d')
+//   const imageRatio =  (canvas.height / 2) / image.height
+//   const VHeight = image.height * imageRatio
+//   const VWidth = image.width * imageRatio
 
-  ctx.drawImage(image, (canvas.width  - VWidth) / 2, VHeight / 2, VWidth, VHeight)
+//   ctx.drawImage(image, (canvas.width  - VWidth) / 2, VHeight / 2, VWidth, VHeight)
 
-}
+// }
 // If then statements
 const devices = (canvas) => {
   if (prng() < 0.5) {
