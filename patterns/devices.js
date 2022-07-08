@@ -32,22 +32,25 @@ const Vdevice = (canvas) => {
 
   const ctx = canvas.getContext('2d')
   const imageRatio =  (canvas.height / 2) / image.height
-  const arrowHeight = image.height * imageRatio
-  const arrowWidth = image.width * imageRatio
+  const VHeight = image.height * imageRatio
+  const VWidth = image.width * imageRatio
 
-  ctx.drawImage(image, (canvas.width  - arrowWidth) / 2, arrowHeight / 2, arrowWidth, arrowHeight)
+  ctx.drawImage(image, (canvas.width  - VWidth) / 2, VHeight / 2, VWidth, VHeight)
 
 }
 // If then statements
 const devices = (canvas) => {
   if (prng() < 0.5) {
     serviceStars(canvas)
-  } else {
-    arrowHead(canvas)
-  }
-  // V device. will need to fix
+  } 
+
+      // V device to be used if not arrowhead
+      else if (prng() < 0.3) {
+        Vdevice(canvas)
+      }
+  
   else {
-    Vdevice(canvas)
+    arrowHead(canvas)
   }
 
 }
