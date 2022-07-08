@@ -50,7 +50,7 @@ const devices = (canvas) => {
       }
   
   else {
-    Vdevice(canvas)
+    arrowHead(canvas)
   }
 
 }
