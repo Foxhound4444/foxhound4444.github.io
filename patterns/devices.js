@@ -36,6 +36,18 @@ const Vdevice = (canvas) => {
   const VWidth = image.width * imageRatio
 
   ctx.drawImage(image, (canvas.width  - VWidth) / 2, VHeight / 2, VWidth, VHeight)
+}
+  // R device
+const Rdevice = (canvas) => {
+  const image = document.getElementById('Rdevice')
+
+  const ctx = canvas.getContext('2d')
+  const imageRatio =  (canvas.height / 2) / image.height
+  const RHeight = image.height * imageRatio
+  const RWidth = image.width * imageRatio
+
+  ctx.drawImage(image, (canvas.width  - RWidth) / 2, RHeight / 2, RWidth, RHeight)
+
 
 }
 // If then statements
