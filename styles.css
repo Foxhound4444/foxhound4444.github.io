@@ -55,6 +55,7 @@ h1 {
     .grid{
       display: grid;
       grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+      text-align: center;
     }
   
 .content-wrap,
