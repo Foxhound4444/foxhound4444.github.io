@@ -1,5 +1,10 @@
 body {
     background: darkkhaki;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -65,6 +70,7 @@ h1 {
     #Section-A li {
       width: 31%;
       text-align: center;
+      align-content: center;
     }
   
 
